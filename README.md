@@ -10,12 +10,12 @@ Welcome to your aptitude test
 </h4>
 <p align="center">
 &nbsp;&nbsp;
-  <a href="#test-objective">Test objective</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#how-to-use">How to use</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#reqirements">Requirements</a>&nbsp;&nbsp;
+  <a href="#test_source-test-objective">Test objective</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#information_source-how-to-use">How to use</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#requirements_source-requirements">Requirements</a>&nbsp;&nbsp;
 </p>
 
-## :wrench: Test Objective
+## :wrench: :test_source: Test Objective
 
 <p>
 This test aims to measure the candidate's technical capabilities and find out if they are in accordance with the developer profile that Mochi is looking for.
@@ -33,7 +33,7 @@ Your object is the following
     email
   }
   ```
-  - The second should upload a PDF calling and also send a real email to user confirming PDF has been uploaded:
+  - The second should upload a PDF and also send a real email to user confirming PDF has been uploaded:
 
   ```js
   method:'POST',
@@ -111,7 +111,7 @@ You can use the following technologies to complete this test:
 - Pure single purpose functions
 - Composability
 
-## :warning: Requirements 
+## :warning: :requirements_source: Requirements 
 
 In order to pass this test you need to submit the following:
 
