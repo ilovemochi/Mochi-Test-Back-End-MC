@@ -29,7 +29,7 @@ Your object is the following
   ```js
   method:'POST',
   body: {
-    E-mail
+    email
   }
   ```
   - The second should upload a PDF calling and also send a real email to user confirming PDF has been uploaded:
@@ -37,8 +37,8 @@ Your object is the following
   ```js
   method:'POST',
   body: {
-    PDF,
-    E-mail
+    pdf,
+    email
   }
   ```
   -
