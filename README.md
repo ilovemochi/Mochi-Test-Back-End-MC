@@ -23,25 +23,25 @@ This test aims to measure the candidate's technical capabilities and find out if
 Your object is the following
 </p>
 - Build an API with AWS & Node
+
 - Create 2 endpoints
-  - The first should create an user calling:
 
-  ```js
-  method:'POST',
-  body: {
-    email
-  }
-  ```
-  - The second should upload a PDF calling and also send a real email to user confirming PDF has been uploaded:
+- The first should create an user calling:
 
-  ```js
-  method:'POST',
-  body: {
-    pdf,
-    email
-  }
-  ```
-  -
+```js
+method:'POST',
+body: {
+  email
+}
+```
+- The second should upload a PDF calling and also send a real email to user confirming PDF has been uploaded:
+```js
+method:'POST',
+body: {
+  pdf,
+  email
+}
+```
 <br>
 
 ## :rocket: Technologies
