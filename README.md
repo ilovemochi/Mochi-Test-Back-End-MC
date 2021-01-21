@@ -90,7 +90,7 @@ You can use the following technologies to complete this test:
 - Pure single purpose functions
 - Composability
 
-## :warning: Requisites
+## :warning: Requisites to Pass test
 
 ## :information_source: How To Use
 
