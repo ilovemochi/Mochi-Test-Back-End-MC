@@ -11,8 +11,8 @@ Welcome to your aptitude test
 <p align="center">
 &nbsp;&nbsp;
   <a href="#test-objective">Test objective</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#how-use">How use</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#information_source-how-to-use">How test</a>&nbsp;&nbsp;
+  <a href="#how-to-use">How to use</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#reqirements">Requirements</a>&nbsp;&nbsp;
 </p>
 
 ## :wrench: Test Objective
@@ -22,7 +22,26 @@ This test aims to measure the candidate's technical capabilities and find out if
 
 Your object is the following
 </p>
+- Build an API with AWS & Node
+- Create 2 endpoints
+  - The first should create an user calling:
 
+  ```js
+  method:'POST',
+  body: {
+    E-mail
+  }
+  ```
+  - The second should upload a PDF calling and also send a real email to user confirming PDF has been uploaded:
+
+  ```js
+  method:'POST',
+  body: {
+    PDF,
+    E-mail
+  }
+  ```
+  -
 <br>
 
 ## :rocket: Technologies
@@ -90,7 +109,9 @@ You can use the following technologies to complete this test:
 - Pure single purpose functions
 - Composability
 
-## :warning: Requisites to Pass test
+## :warning: Requirements 
+
+In order to pass this test you need to submit the following:
 
 ## :information_source: How To Use
 
