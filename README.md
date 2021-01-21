@@ -29,7 +29,18 @@ Your object is the following
 
 You can use the following technologies to complete this test:
 
-- 
+- [Node 14 (ES6+)](https://nodejs.org/en/)
+- [VS Code][vc] and [ESLint][vceslint]
+- [Typescript](https://www.typescriptlang.org/)
+- [AWS](https://aws.amazon.com/)
+  - [DynamoDB](https://aws.amazon.com/dynamodb/?nc2=type_a)
+  - [Lambda](https://aws.amazon.com/lambda/?nc2=type_a)
+  - [SES](https://aws.amazon.com/ses/)
+  - [SQS](https://aws.amazon.com/sqs/)
+  - [S3](https://aws.amazon.com/s3/)
+  - [API Gateway](https://aws.amazon.com/api-gateway/)
+  - [Auth0](https://auth0.com/partners/amazon-web-services)
+  
 
 # To make a commit must be used a following rule:
 
@@ -40,9 +51,6 @@ You can use the following technologies to complete this test:
 
 ## Coding Conventions
 
-- Interfaces for React Components have to be named (ComponentName)Props
-  - e.g - Component `const App = ({text}) => <div>{text}</div>`
-  - e.g - Interface `interface AppProps { text: string }`
 - All other Interfaces should be CamelCase version of the name of the function or object
 - Only add the prefix I if there is no other Choice
   - e.g - Function `addStyles() => {}`
@@ -51,14 +59,8 @@ You can use the following technologies to complete this test:
 - Limit the use of classes but instead opt for pure single purpose functions.
 - Rely on composability to deal with complexity
 - Prefer Async/Await syntax over .chain with then.catch
-- Separation of concerns in React
-  - Defer logic to hooks and HOCs
-  - Defer async logic to middlewares such as redux-saga
-  - Global state should be stored in redux
-  - Page state should be stored in a context API
-  - Local state should be stored in component
-  - Keep components as simple as possible so they can be more modular
 - Rely on utility functions by ramda for immutability, composability and clarity
+- Immutability
 
   ```ts
   // BAD PRACTICE
@@ -85,7 +87,6 @@ You can use the following technologies to complete this test:
   // updatedObjTwo = { keepMe: '😊' }
   ```
 
-- Immutability
 - Pure single purpose functions
 - Composability
 
@@ -93,4 +94,18 @@ You can use the following technologies to complete this test:
 
 ## :information_source: How To Use
 
+```bash
+#  Fork & Clone this repository
+$ git clone https://github.com/Nicasiomarques/mochi-test
+
+# Go into the repository
+$ cd mochi-test
+
+```
+
 ## All Rights Reserved for Mochi Noir, LDA
+
+[nodejs]: https://nodejs.org/
+[vc]: https://code.visualstudio.com/
+[vceditconfig]: https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig
+[vceslint]: https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint
