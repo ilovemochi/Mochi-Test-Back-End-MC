@@ -25,23 +25,25 @@ Your object is the following
 - Build an API with AWS & Node
 
 - Create 2 endpoints
+  - The first should create an user calling:
 
-- The first should create an user calling:
+  ```js
+  method:'POST',
+  body: {
+    email
+  }
+  ```
+  - The second should upload a PDF calling and also send a real email to user confirming PDF has been uploaded:
 
-```js
-method:'POST',
-body: {
-  email
-}
-```
-- The second should upload a PDF calling and also send a real email to user confirming PDF has been uploaded:
-```js
-method:'POST',
-body: {
-  pdf,
-  email
-}
-```
+  ```js
+  method:'POST',
+  body: {
+    pdf,
+    email
+  }
+  ```
+</p>
+
 <br>
 
 ## :rocket: Technologies
