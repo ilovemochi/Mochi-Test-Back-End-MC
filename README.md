@@ -15,7 +15,7 @@ Welcome to your aptitude test
   <a href="#requirements_source-requirements">Requirements</a>&nbsp;&nbsp;
 </p>
 
-## :wrench: :test_source: Test Objective
+## :test_source: Test Objective
 
 <p>
 This test aims to measure the candidate's technical capabilities and find out if they are in accordance with the developer profile that Mochi is looking for.
@@ -111,7 +111,7 @@ You can use the following technologies to complete this test:
 - Pure single purpose functions
 - Composability
 
-## :warning: :requirements_source: Requirements 
+## :requirements_source: Requirements 
 
 In order to pass this test you need to submit the following:
 
