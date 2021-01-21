@@ -1,134 +1,68 @@
-<h1 align="center">
+<h1 style="text-align:center">
     <img alt="logo Mochi" src="logo-purplehorizontal.png" />
     <br>
     Mochi Aptitude Test
     <br>
 </h1>
 
-<h4 align="center">
+<h4 style="text-align:center">
 Welcome to your aptitude test
 </h4>
-<p align="center">
+<p style="text-align:center">
 &nbsp;&nbsp;
-  <a href="#test_source-test-objective">Test objective</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#test-source-test-objective">Test objective</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#information_source-how-to-use">How to use</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#requirements_source-requirements">Requirements</a>&nbsp;&nbsp;
+ <a href="#grading_criteria">Grading criteria</a>&nbsp;&nbsp;
 </p>
 
-## :test_source: Test Objective
+## :test-source-test-objective: Test Objective
 
-<p>
-This test aims to measure the candidate's technical capabilities and find out if they are in accordance with the developer profile that Mochi is looking for.
+###This test aims to measure the candidate's technical capabilities and find out if they are in accordance with the developer profile that Mochi is looking for.
 
-Your object is the following
-</p>
-- Build an API with AWS & Node
+### Objective: Build a backend with two endpoints
 
-- Create 2 endpoints
-  - The first should create an user calling:
+1. An endpoint to create a user
 
-  ```js
-  method:'POST',
-  body: {
-    email
-  }
-  ```
-  - The second should upload a PDF and also send a real email to user confirming PDF has been uploaded:
-
-  ```js
-  method:'POST',
-  body: {
-    pdf,
-    email
-  }
-  ```
-</p>
-
-<br>
+2. An endpoint to upload a PDF, which attaches it to the previously created user and then sends the user an email
 
 ## :rocket: Technologies
 
-You can use the following technologies to complete this test:
+The candidate can use any AWS service, but he is required to include these:
 
-- [Node 14 (ES6+)](https://nodejs.org/en/)
-- [VS Code][vc] and [ESLint][vceslint]
-- [Typescript](https://www.typescriptlang.org/)
-- [AWS](https://aws.amazon.com/)
+  - [Node LTS (ES6+)](https://nodejs.org/en/)
   - [DynamoDB](https://aws.amazon.com/dynamodb/?nc2=type_a)
   - [Lambda](https://aws.amazon.com/lambda/?nc2=type_a)
-  - [SES](https://aws.amazon.com/ses/)
-  - [SQS](https://aws.amazon.com/sqs/)
   - [S3](https://aws.amazon.com/s3/)
   - [API Gateway](https://aws.amazon.com/api-gateway/)
-  - [Auth0](https://auth0.com/partners/amazon-web-services)
-  
-
-# To make a commit must be used a following rule:
-
-`git commit -m "*type*: commit-message"`
-
-- Where type is: [ `build`, `chore`, `ci`, `docs`, `feat`, `fix`, `perf`, `refactor`, `revert`, `style`, `test` ]
-- And commit-message must be written in lower-case.
-
-## Coding Conventions
-
-- All other Interfaces should be CamelCase version of the name of the function or object
-- Only add the prefix I if there is no other Choice
-  - e.g - Function `addStyles() => {}`
-  - e.g - Interface `interface AddStyles {}`
-- Do not use the type any, opt for unknown.
-- Limit the use of classes but instead opt for pure single purpose functions.
-- Rely on composability to deal with complexity
-- Prefer Async/Await syntax over .chain with then.catch
-- Rely on utility functions by ramda for immutability, composability and clarity
-- Immutability
-
-  ```ts
-  // BAD PRACTICE
-  // Mutates the object
-  const obj = { removeMe: '😭', keepMe: '😊' };
-  obj.removeMe = null;
-  delete obj.removeMe;
-  // obj === { keepMe: '😊' }
-
-  // BETTER BUT NOT IDEAL
-  // Immutable but not declarative
-  // Pollutes the execution context with variable key
-  const objTwo = { removeMe: '😭', keepMe: '😊' };
-  const { removeMe, ...updatedObj } = objTwo;
-  // objTwo === { removeMe: '😭', keepMe: '😊' }
-  // updatedObj = { keepMe: '😊' }
-
-  // IDEAL
-  // Immutable and declarative
-  const objThree = { removeMe: '😭', keepMe: '😊' };
-  const removeKey = R.omit(['removeMe']);
-  const updatedObjTwo = removeKey(objThree);
-  // objThree === { removeMe: '😭', keepMe: '😊' }
-  // updatedObjTwo = { keepMe: '😊' }
-  ```
-
-- Pure single purpose functions
-- Composability
 
 ## :requirements_source: Requirements 
 
 In order to pass this test you need to submit the following:
 
-## :information_source: How To Use
+## :information_source: How To Submit
 
-```bash
-#  Fork & Clone this repository
-$ git clone https://github.com/Nicasiomarques/mochi-test
+ - Create a public repository on Github and provide us with the link
+ - Deploy the Lambda functions and add a description on how to use on the README.md
 
-# Go into the repository
-$ cd mochi-test
+## :grading_criteria: How You Will Be Graded
 
-```
+1. Quality of the code
+    * ESLINT
+    * Prettier
+    * Immutability
+    * Readability
+    * Naming conventions
+    * Design Patterns
+  
 
+2. Architecture  (Monolith vs Microservices | Event Driven vs Synchronous)
+
+
+3. Bonuses
+   * Typescript
+   * Unit/Integration/E2E tests
+   * Sanitization
+   * Validation
+  
 ## All Rights Reserved for Mochi Noir, LDA
-
-[nodejs]: https://nodejs.org/
-[vc]: https://code.visualstudio.com/
-[vceditconfig]: https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig
-[vceslint]: https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint
