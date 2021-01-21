@@ -26,7 +26,7 @@ Build a backend with two endpoints
 
 2. An endpoint to upload a PDF, which attaches it to the previously created user and then sends the user an email
 
-> **Note:** Do not worry proper authentication
+> **Note:** Do not worry about proper authentication
 
 ## :rocket: Technology
 
