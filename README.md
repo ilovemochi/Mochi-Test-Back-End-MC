@@ -1,26 +1,26 @@
-<h1 style="text-align:center">
+<h1 align="center">
     <img alt="logo Mochi" src="logo-purplehorizontal.png" />
     <br>
     Mochi Aptitude Test
     <br>
 </h1>
 
-<h4 style="text-align:center">
+<h4 align="center">
 Welcome to your aptitude test
 </h4>
-<p style="text-align:center">
+<p align="center">
 &nbsp;&nbsp;
-  <a href="#test-source-test-objective">Test objective</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#information_source-how-to-use">How to use</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#requirements_source-requirements">Requirements</a>&nbsp;&nbsp;
- <a href="#grading_criteria">Grading criteria</a>&nbsp;&nbsp;
+  <a href="#objective">Test objective</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#information">How to use</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#requirements">Requirements</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+ <a href="#grading">Grading criteria</a>&nbsp;&nbsp;
 </p>
 
 ## :test-source-test-objective: Test Objective
 
-###This test aims to measure the candidate's technical capabilities and find out if they are in accordance with the developer profile that Mochi is looking for.
+### This test aims to measure the candidate's technical capabilities and find out if they are in accordance with the developer profile that Mochi is looking for.
 
-### Objective: Build a backend with two endpoints
+### :objective: :medal_sports:  Objective: Build a backend with two endpoints
 
 1. An endpoint to create a user
 
@@ -36,16 +36,16 @@ The candidate can use any AWS service, but he is required to include these:
   - [S3](https://aws.amazon.com/s3/)
   - [API Gateway](https://aws.amazon.com/api-gateway/)
 
-## :requirements_source: Requirements 
+## :requirements: :stop_sign:  Requirements 
 
 In order to pass this test you need to submit the following:
 
-## :information_source: How To Submit
+## :information: How To Submit
 
  - Create a public repository on Github and provide us with the link
  - Deploy the Lambda functions and add a description on how to use on the README.md
 
-## :grading_criteria: How You Will Be Graded
+## :grading: :test_tube: How You Will Be Graded
 
 1. Quality of the code
     * ESLINT
